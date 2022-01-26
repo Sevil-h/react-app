@@ -4,6 +4,8 @@ import "./ExpenseItem.css";
 import { useState } from "react";
 
 function ExpenseItem(props) {
+  const [title, setTitle] = useState(props.title);
+
   return (
     <li>
       <Card className="expense-item">
